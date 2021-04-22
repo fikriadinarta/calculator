@@ -51,6 +51,17 @@ public class Main
        double bagi2 = calculator1.bagi(3.4, 5.4);
        System.out.println("Hasil pembagian method bagi tanpa parameter: "+ bagi1);
        System.out.println("Hasil pembagian method bagi dengan parameter: "+ bagi2);
+       
+       calculatorprogrammer clp= new calculatorprogrammer();
+       System.out.println(" \n calculatorprogrammer");
+       System.out.println(" bentuk biner dari desimal" + " :"+ Integer.toBinaryString(4));
+       System.out.println(" bentuk hex dari desimal" + " :"+ Integer.toHexString(4));
+       
+       calculatorscientific cs = new calculatorscientific();
+       System.out.println(" \n Calculatorscientific");
+       System.out.println("Faktorial dari 6! adalah" + cs. menghitungFaktorial(5));
+       System.out.println("luas lingkarannya adalah" + cs.luas());
+       System.out.println("luas Bujur sangkar adalah" + cs.bujurSangkar(10));
     }
     
 }
