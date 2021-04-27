@@ -9,7 +9,7 @@ public class Main
 {
      public static void main(String args[])
     {
-       System.out.println(Calculator.info);
+       /*System.out.println(Calculator.info);
        
        Calculator calculator1 = new Calculator();
        Calculator calculator4 = new Calculator();
@@ -62,6 +62,53 @@ public class Main
        System.out.println("Faktorial dari 6! adalah" + cs. menghitungFaktorial(5));
        System.out.println("luas lingkarannya adalah" + cs.luas());
        System.out.println("luas Bujur sangkar adalah" + cs.bujurSangkar(10));
+       
+       CalculatorTrigonometri  clr = new CalculatorTriRadian();
+       CalculatorTrigonometri  cld = new CalculatorTriDegree();
+       
+       System.out.println(" \n CalculatorTrigonometri"); 
+       System.out.println("nilai dari sin adalah" + Math.sin(45));
+       System.out.println("nilai dari cos adalah" + Math.cos(8));
+       System.out.println("nilai dari tan adalah" + Math.tan(16));
+    
+       System.out.println("Nilai dari derajat sudut untuk PI/6 adalah " + Math.toDegrees(Math.PI/6) + " derajat");  
+       System.out.println("Nilai dari sudut radian untuk sudut 30 derajat adalah " + Math.toRadians(30));  
+       */
+       Calculator cl = new Calculator();
+       SimpanOperasiCalculator  spr = new SimpanOperasiKeMemoryReverse ();
+      
+      
+      cl.setSimpanOperasi(spr);
+      cl.op1 = 1;
+      cl.op2 = 1;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 2;
+      cl.op2 = 2;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 3;
+      cl.op2 = 3;
+      System.out.println(cl.jumlah());
+      System.out.println("Data dari memori: ");
+      System.out.println(cl.bacaOperasi());
+      
+      SimpanOperasiCalculator spf = new  SimpanOperasiMemoryForwad();
+      cl.setSimpanOperasi(spf);
+      cl.op1 = 1;
+      cl.op2 = 1;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 2;
+      cl.op2 = 2;
+      System.out.println(cl.jumlah());
+      
+      cl.op1 = 3;
+      cl.op2 = 3;
+      System.out.println(cl.jumlah());
+      System.out.println("Data dari memori: ");
+      System.out.println(cl.bacaOperasi());
+      
     }
     
 }
