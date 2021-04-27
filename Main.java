@@ -62,6 +62,7 @@ public class Main
        System.out.println("Faktorial dari 6! adalah" + cs. menghitungFaktorial(5));
        System.out.println("luas lingkarannya adalah" + cs.luas());
        System.out.println("luas Bujur sangkar adalah" + cs.bujurSangkar(10));
+      
        
        CalculatorTrigonometri  clr = new CalculatorTriRadian();
        CalculatorTrigonometri  cld = new CalculatorTriDegree();
@@ -72,8 +73,10 @@ public class Main
        System.out.println("nilai dari tan adalah" + Math.tan(16));
     
        System.out.println("Nilai dari derajat sudut untuk PI/6 adalah " + Math.toDegrees(Math.PI/6) + " derajat");  
-       System.out.println("Nilai dari sudut radian untuk sudut 30 derajat adalah " + Math.toRadians(30));  
+       System.out.println("Nilai dari sudut radian untuk sudut 30 derajat adalah " + Math.toRadians(30));
        */
+    
+
        Calculator cl = new Calculator();
        SimpanOperasiCalculator  spr = new SimpanOperasiKeMemoryReverse ();
       
@@ -108,7 +111,8 @@ public class Main
       System.out.println(cl.jumlah());
       System.out.println("Data dari memori: ");
       System.out.println(cl.bacaOperasi());
-      
-    }
     
+    }
 }
+    
+    
